@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/styles.css">
+        
+        <title>N</title>
+    </head>
+    <body>
+        <div class="Sliders">
+            <div class="centered">
+                <button class="btn" id="applyChangeBtn">Apply Changes</button>
+                <p>Number of Boids:</p>
+                <div class="field">
+                    <div class="slidercontainer">
+                        <input type="range" class="slider" min="1" max="100" value="50" class="slider" id="numberOfBoidsSlider">
+                        <span id="currentNumberBoids" class="valueDisplay"></span>
+                    </div>
+                </div>
+
+                <p>Boid Contact Range:</p>
+                <div class="field">
+                    <div class="slidercontainer">
+                        <input type="range" class="slider" min="1" max="100" value="50" class="slider" id="boidsContactRangeSlider" >
+                        <span id="currentBoidsContact" class="valueDisplay"></span>
+                    </div>
+                </div>
+
+                <p>Boid Visual Range:</p>
+                <div class="field">
+                    <div class="slidercontainer">
+                        <input type="range" class="slider" min="1" max="100" value="50" class="slider" id="boidsVisualRangeSlider">
+                        <span id="currentVisualRange" class="valueDisplay"></span>
+                    </div>
+                </div>
+
+                <p>Cohesion Factor:</p>
+                <div class="field">
+                    <div class="slidercontainer">
+                        <input type="range" class="slider" min="1" max="100" value="50" class="slider" id="cohesionSlider">
+                        <span id="currentCohesionFactor" class="valueDisplay"></span>
+                    </div>
+                </div>
+
+                <p>Avoidance Factor:</p>
+                <div class="field">
+                    <div class="slidercontainer">
+                        <input type="range" class="slider" min="1" max="100" value="50" class="slider" id="avoidanceSlider">
+                        <span id="currentAvoidanceFactor" class="valueDisplay"></span>
+                    </div>
+                </div>
+                                
+                <div class="field">
+                    <div class="checkboxContainer">
+                        <input type="checkbox" id="showContactRange" class="checkbox">
+                        <span class="valueDisplay">Show Contact Range?</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="checkboxContainer">
+                        <input type="checkbox" id="showVisualRange" class="checkbox">
+                        <span class="valueDisplay">Show Visual Range?</span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="checkboxContainer">
+                        <input type="checkbox" id="showInteractions" class="checkbox">
+                        <span class="valueDisplay">Show Interactions?</span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <div class="Container" id="containerDiv">
+        </div>
+
+        <script type="text/javascript" src="../javascript/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+
+
+.slidercontainer{
+    color: aliceblue;
+    display: flex;
+    overflow-x: hidden;
+    z-index: 1;
+    background-color: #111;
+    padding-right: 50%;
+    align-items: center;
+}
+.checkboxContainer{
+    color: aliceblue;
+    display: flex;
+    overflow-x: hidden;
+    z-index: 1;
+    background-color: #111;
+    padding-top: 10%;
+    padding-right: 50%;
+    align-items: center;
+}
+
+.valueDisplay{
+    min-width: 60px; /* or use width: 60px */
+    text-align: right;
+    font-family: monospace; /* optional, helps alignment */
+    white-space: nowrap;
+}
+
+.Sliders{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+    width: 20%;
+    height: 100%;
+    background-color: #111;
+}
+.Container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+    width: 80%;
+    height: 100%;
+    background-color: darkblue;
+}
+
+.centered {
+    position: absolute;
+    outline: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+#boid{
+    position: absolute;
+    left: 0;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    height: 50px;
+    width: 100px;
+}
+
+p {
+  color: white;
+  text-align: left;
+}
+
+
+
+  .btn{
+    border: none;
+    color: white;
+    background-color: darkblue;
+    padding: 13px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+  .btn:hover{
+    background-color: rgb(143, 143, 247);
+    color: white;
+  }
